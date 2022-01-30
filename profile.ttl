@@ -1,0 +1,31 @@
+## Turtle Start ##
+
+  @prefix : <#>.
+  @prefix cert: <http://www.w3.org/ns/auth/cert#>.
+  @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+  @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+  @prefix dcterms: <http://purl.org/dc/terms/>.
+  @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+  @prefix schema: <http://schema.org/>.
+
+  <>
+    a foaf:PersonalProfileDocument ;
+    foaf:maker <http://emekaokoye.github.io/profile.ttl#this> ;
+    foaf:primaryTopic <http://emekaokoye.github.io/profile.ttl#this> .
+
+  <http://emekaokoye.github.io/profile.ttl#this>
+    a foaf:Person ;
+    a schema:Person ;
+    foaf:name "Emeka Okoye" ;
+    cert:key <http://emekaokoye.github.io/profile.ttl#PublicKey>.
+
+
+  <http://emekaokoye.github.io/profile.ttl#PublicKey>
+    a cert:RSAPublicKey;
+    dcterms:created "2022-01-30T00:46:05.000Z"^^xsd:dateTime;
+    dcterms:title "Created by YouID";
+    rdfs:label "Emeka Okoye";
+    cert:exponent "65537"^^xsd:int;
+    cert:modulus "909663135ADFF557051623567843C3B39FA6F40D58CB201FA0A21A4B021336A583636BFB7755F758935073ABDD4ADD00AFD248F08F9DEA154BB059995EF3EEA92962FFB5A3B3C93632A5280E36B10740060B69B6801CBA6FA0676B5990BBCA34ED3CA5193F6F4F75AB4E9A44C6485AAB7F27C01BDD40F8B990A3294E10D64CD54F81B29C7D3390C1A2877963D6C9DC52C7361739BD8B52BA484BCC2584357266C53489A734B6A7ABC851E3572B8FA470F4FFDA6AB9B438806155A9120356020455DFFF2FCA4231D0C1908F8B678636B2F670746B04494942F3BA4825F6A452AD112DFC5D085841902A60C7C2A5BB71553B16F82956F5ADC26200CA0D6C39038D"^^xsd:hexBinary.
+
+## Turtle End ##
